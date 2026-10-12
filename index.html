@@ -1,11 +1,432 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio." />
+    <title>SACI Zhour - Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <div class="desktop-bar">
+      <span class="desktop-bar__title">
+        <span class="icon icon-folder" aria-hidden="true"></span> My portfolio
+      </span>
+      <span class="desktop-bar__meta">PERSONAL WEBSITE '26</span>
+    </div>
+
+    <div class="window">
+      <header class="site-header">
+        <div class="title-bar">
+          <p class="title-bar__text">
+            <span class="icon icon-folder" aria-hidden="true"></span>
+            SACI Zhour - Portfolio
+          </p>
+          <div class="title-bar__controls" aria-hidden="true">
+            <span class="win-btn">_</span>
+            <span class="win-btn">☐</span>
+            <span class="win-btn">×</span>
+          </div>
+        </div>
+
+        <div class="menu-bar" aria-hidden="true">
+          <span>File</span>
+          <span>Edit</span>
+          <span>View</span>
+          <span>Help</span>
+        </div>
+
+        <div class="address-bar">
+          <span class="address-bar__label">Address</span>
+          <p class="address-bar__path">
+            <span class="icon icon-folder" aria-hidden="true"></span>
+            <span id="address-path">C:\Users\Z034\Portfolio</span>
+            <span class="address-bar__arrow" aria-hidden="true">▾</span>
+          </p>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul class="nav-tabs">
+            <li>
+              <a class="nav-tab is-active" href="#home" aria-current="page">
+                <span class="icon icon-folder" aria-hidden="true"></span>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-tab" href="#about">
+                <span class="icon icon-folder" aria-hidden="true"></span>
+                <span>About</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-tab" href="#skills">
+                <span class="icon icon-folder" aria-hidden="true"></span>
+                <span>Stack</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-tab" href="#projects">
+                <span class="icon icon-folder" aria-hidden="true"></span>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-tab" href="#contact">
+                <span class="icon icon-folder" aria-hidden="true"></span>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="main">
+        <!-- home -->
+        <section
+          id="home"
+          class="section section--home"
+          aria-labelledby="home-title"
+        >
+          <p class="breadcrumb">
+            <span class="icon icon-folder" aria-hidden="true"></span>
+            Home / readme.txt
+          </p>
+
+          <div class="hero">
+            <div class="hero__text">
+              <p class="hero__eyebrow">Hello, world!</p>
+              <h1 id="home-title">I'm Zhour.</h1>
+              <p class="hero__tagline">AI Engineer Student.</p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#projects">View projects</a>
+                <a class="btn" href="#contact">Get in touch</a>
+              </div>
+            </div>
+
+            <figure class="profile-card">
+              <div class="profile-card__bar" aria-hidden="true">
+                <span>profile.png</span>
+                <span>×</span>
+              </div>
+              <img
+                class="profile-card__image"
+                src="images/me.jpg"
+                alt="Portrait"
+                width="250"
+                height="200"
+              />
+            </figure>
+          </div>
+        </section>
+        <!-- about -->
+        <section id="about" class="section" aria-labelledby="about-title">
+          <h2 id="about-title" class="section__title">
+            <span class="icon icon-folder" aria-hidden="true"></span> About
+          </h2>
+
+          <div class="about-grid">
+            <article class="panel">
+              <h3 class="panel__tab">About me</h3>
+              <div class="panel__body">
+                <p class="lead">
+                  Hi! I'm SACI Zhour, an AI engineering student and UI/UX
+                  designer in Algiers. I build AI tools from model to interface,
+                  so they work well and feel good to use. I enjoy breaking a
+                  problem into small pieces and learning something new with
+                  every project.
+                </p>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h3 class="panel__tab">Education</h3>
+              <div class="panel__body">
+                <div class="timeline-item">
+                  <p class="timeline-item__label">Education · In progress</p>
+                  <h4>
+                    Computer Science / Artificial Intelligence & Applications
+                  </h4>
+                  <p class="timeline-item__meta">ENSTA-Algiers · 2023</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- stack -->
+        <section id="skills" class="section" aria-labelledby="skills-title">
+          <h2 id="skills-title" class="section__title">
+            <span class="icon icon-folder" aria-hidden="true"></span> Stack
+          </h2>
+
+          <ul class="stack-grid">
+            <li class="stack-item">
+              <span class="stack-item__badge" aria-hidden="true"
+                ><i class="devicon-html5-plain colored"></i
+              ></span>
+              <span class="stack-item__name">HTML5</span>
+            </li>
+            <li class="stack-item">
+              <span class="stack-item__badge" aria-hidden="true"
+                ><i class="devicon-css3-plain colored"></i
+              ></span>
+              <span class="stack-item__name">CSS3</span>
+            </li>
+            <li class="stack-item">
+              <span class="stack-item__badge" aria-hidden="true"
+                ><i class="devicon-javascript-plain colored"></i
+              ></span>
+              <span class="stack-item__name">JavaScript</span>
+            </li>
+            <li class="stack-item">
+              <span class="stack-item__badge" aria-hidden="true"
+                ><i class="devicon-python-plain colored"></i
+              ></span>
+              <span class="stack-item__name">Python</span>
+            </li>
+            <li class="stack-item">
+              <span class="stack-item__badge" aria-hidden="true"
+                ><i class="devicon-react-original colored"></i
+              ></span>
+              <span class="stack-item__name">React</span>
+            </li>
+            <li class="stack-item">
+              <span class="stack-item__badge" aria-hidden="true"
+                ><i class="devicon-tailwindcss-original colored"></i
+              ></span>
+              <span class="stack-item__name">Tailwind</span>
+            </li>
+          </ul>
+        </section>
+        <!-- projects -->
+        <section id="projects" class="section" aria-labelledby="projects-title">
+          <h2 id="projects-title" class="section__title">
+            <span class="icon icon-folder" aria-hidden="true"></span> Projects
+          </h2>
+
+          <div class="projects-list">
+            <article class="project-card">
+              <div class="project-card__preview" aria-hidden="true">
+                <div class="mini-window">
+                  <p class="mini-window__bar">
+                    <span>portfolio.png</span><span>— ☐ ×</span>
+                  </p>
+                  <div class="mini-window__screen">
+                    <img src="images/portfolio.png" alt="Personal Portfolio" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3>Personal Portfolio</h3>
+                <p>
+                  A responsive portfolio website with an introduction, skills,
+                  projects and a contact form.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__preview" aria-hidden="true">
+                <div class="mini-window">
+                  <p class="mini-window__bar">
+                    <span>Amanah.png</span><span>— ☐ ×</span>
+                  </p>
+                  <div class="mini-window__screen">
+                    <img src="images/amanah.png" alt="Amanah" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3>Amanah</h3>
+                <p>
+                  An online lost-and-found public platform that helps people
+                  across Algeria report lost belongings or announce found items.
+                  It connects citizens in a trusted environment and encourages
+                  community cooperation.
+                </p>
+                <ul class="tag-list" aria-label="Responsibilities">
+                  <li>Project Manager</li>
+                  <li>UI/UX Designer</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__preview" aria-hidden="true">
+                <div class="mini-window">
+                  <p class="mini-window__bar">
+                    <span>Thiqa.png</span><span>— ☐ ×</span>
+                  </p>
+                  <div class="mini-window__screen">
+                    <img src="images/thiqa.png" alt="Thiqa" />
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3>Thiqa</h3>
+                <p>
+                  AI-powered trust verification platform specifically designed
+                  for the Algerian digital marketplace.
+                </p>
+                <ul class="tag-list" aria-label="Technologies used">
+                  <li>React</li>
+                  <li>Tailwind CSS</li>
+                  <li>RTL Arabic UI</li>
+                  <li>JWT Auth Context</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="section" aria-labelledby="contact-title">
+          <h2 id="contact-title" class="section__title">
+            <span class="icon icon-folder" aria-hidden="true"></span> Contact
+          </h2>
+
+          <div class="contact-grid">
+            <article class="panel">
+              <h3 class="panel__tab">Send a message</h3>
+              <div class="panel__body">
+                <form id="contact-form" class="form" novalidate>
+                  <p class="form__hint">All fields are required.</p>
+
+                  <div class="form__field">
+                    <label for="name"
+                      >Name <span aria-hidden="true">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Your name"
+                      autocomplete="name"
+                      required
+                      aria-describedby="name-error"
+                    />
+                    <p
+                      class="form__error"
+                      id="name-error"
+                      aria-live="polite"
+                    ></p>
+                  </div>
+
+                  <div class="form__field">
+                    <label for="email"
+                      >Email <span aria-hidden="true">*</span></label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="you@example.com"
+                      autocomplete="email"
+                      required
+                      aria-describedby="email-error"
+                    />
+                    <p
+                      class="form__error"
+                      id="email-error"
+                      aria-live="polite"
+                    ></p>
+                  </div>
+
+                  <div class="form__field">
+                    <label for="message"
+                      >Message <span aria-hidden="true">*</span></label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="What would you like to talk about?"
+                      required
+                      aria-describedby="message-error"
+                    ></textarea>
+                    <p
+                      class="form__error"
+                      id="message-error"
+                      aria-live="polite"
+                    ></p>
+                  </div>
+
+                  <button type="submit" class="btn">
+                    <span class="icon icon-mail" aria-hidden="true"></span>
+                    Send message
+                  </button>
+
+                  <p class="form__status" id="form-status" role="status"></p>
+                </form>
+              </div>
+            </article>
+
+            <article class="panel">
+              <h3 class="panel__tab">Contact details</h3>
+              <div class="panel__body">
+                <p class="lead">Find me on the web.</p>
+                <address>
+                  <ul class="contact-list">
+                    <li>
+                      <span class="icon icon-mail" aria-hidden="true"></span>
+                      <div>
+                        <p class="contact-list__label">Email</p>
+                        <a href="mailto:az.saci@ensta.edu.dz"
+                          >az.saci@ensta.edu.dz</a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <span class="icon icon-github" aria-hidden="true"></span>
+                      <div>
+                        <p class="contact-list__label">GitHub</p>
+                        <a
+                          href="https://github.com/Z034"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >github.com/Z034</a
+                        >
+                      </div>
+                    </li>
+                    <li>
+                      <span
+                        class="icon icon-linkedin"
+                        aria-hidden="true"
+                      ></span>
+                      <div>
+                        <p class="contact-list__label">LinkedIn</p>
+                        <a
+                          href="https://linkedin.com/in/zhour-saci-7711aa326"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >linkedin.com/in/zhour-saci-7711aa326</a
+                        >
+                      </div>
+                    </li>
+                  </ul>
+                </address>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <p>&copy; Saci Zhour · Personal portfolio '26</p>
+      </footer>
+    </div>
+  </body>
 </html>
