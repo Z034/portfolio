@@ -37,10 +37,10 @@ portfolio/
 ├── README.md  
 ├── index.html  
 ├── css/  
-│   └── style.css  
+│     └── style.css  
 ├── js/  
-│   └── script.js  
+│     └── script.js  
 └── images/  
-    └── me.jpg  
-    └── amanah.png  
-    └── thiqa.png  
+      └── me.jpg  
+      └── amanah.png  
+      └── thiqa.png  
