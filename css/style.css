@@ -1126,3 +1126,66 @@ a {
 .window {
   margin-bottom: 4.5rem;
 }
+
+
+
+
+
+
+
+/* hello world typewriter */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+.typewriter {
+  --chars: 16; 
+  display: inline-block;
+  box-sizing: content-box; 
+  width: calc(var(--chars) * 1ch);
+  overflow: hidden;
+  font-family: ui-monospace, SFMono-Regular, "Cascadia Mono", Consolas,
+    "Liberation Mono", Menlo, monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: nowrap;
+  vertical-align: bottom;
+  border-right: 0.125rem solid currentColor; /* the cursor */
+  animation:
+    typing 1.4s steps(var(--chars), end) 0.4s both,
+    caret 0.7s step-end 0.4s 6 forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(var(--chars) * 1ch);
+  }
+}
+
+@keyframes caret {
+  0% {
+    border-right-color: currentColor;
+  }
+  50%,
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .typewriter {
+    animation: none;
+    border-right-color: transparent;
+  }
+}
