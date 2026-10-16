@@ -60,7 +60,27 @@
           </p>
         </div>
 
-        <nav class="main-nav" aria-label="Main navigation">
+        <button
+          type="button"
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span class="menu-toggle__icon" aria-hidden="true"></span>
+          Menu
+        </button>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <div class="main-nav__bar">
+            <p class="main-nav__title">
+              <span class="icon icon-folder" aria-hidden="true"></span>
+              Folders
+            </p>
+            <button type="button" class="main-nav__close" aria-label="Close menu">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+
           <ul class="nav-tabs">
             <li>
               <a class="nav-tab is-active" href="#home" aria-current="page">
@@ -77,7 +97,7 @@
             <li>
               <a class="nav-tab" href="#skills">
                 <span class="icon icon-folder" aria-hidden="true"></span>
-                <span>Stack</span>
+                <span>Skills</span>
               </a>
             </li>
             <li>
@@ -107,15 +127,11 @@
             Home / readme.txt
           </p>
 
-          <div class="hero">
+                    <div class="hero">
             <div class="hero__text">
               <p class="hero__eyebrow">Hello, world!</p>
               <h1 id="home-title">I'm Zhour.</h1>
               <p class="hero__tagline">AI Engineer Student.</p>
-              <div class="hero__actions">
-                <a class="btn btn--primary" href="#projects">View projects</a>
-                <a class="btn" href="#contact">Get in touch</a>
-              </div>
             </div>
 
             <figure class="profile-card">
@@ -127,10 +143,15 @@
                 class="profile-card__image"
                 src="images/me.jpg"
                 alt="Portrait"
-                width="250"
-                height="200"
+                width="400"
+                height="350"
               />
             </figure>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">View projects</a>
+              <a class="btn" href="#contact">Get in touch</a>
+            </div>
           </div>
         </section>
         <!-- about -->
@@ -168,10 +189,10 @@
           </div>
         </section>
 
-        <!-- stack -->
+        <!-- skills -->
         <section id="skills" class="section" aria-labelledby="skills-title">
           <h2 id="skills-title" class="section__title">
-            <span class="icon icon-folder" aria-hidden="true"></span> Stack
+            <span class="icon icon-folder" aria-hidden="true"></span> Skills
           </h2>
 
           <ul class="stack-grid">
@@ -452,5 +473,8 @@
         <p>&copy; 2026 SACI Zhour · Personal portfolio</p>
       </footer>
     </div>
+    <a class="to-top" href="#top" aria-label="Back to top">
+      <span aria-hidden="true">↑</span>
+    </a>
   </body>
 </html>
