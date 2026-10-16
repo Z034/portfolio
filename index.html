@@ -137,19 +137,37 @@
               <p class="hero__tagline">AI Engineer Student.</p>
             </div>
 
-            <figure class="profile-card">
-              <div class="profile-card__bar" aria-hidden="true">
-                <span>profile.png</span>
-                <span>×</span>
-              </div>
-              <img
-                class="profile-card__image"
-                src="images/me.jpg"
-                alt="Portrait"
-                width="400"
-                height="350"
-              />
-            </figure>
+            <div class="profile-stack">
+              <span class="sign sign--cursor" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 2l14 10-6.2 1.2 3.7 7.3-3 1.5-3.7-7.4L5 18z"/></svg>
+              </span>
+              <span class="sign sign--tag" aria-hidden="true">&lt;/&gt;</span>
+              <span class="sign sign--braces" aria-hidden="true">{...}</span>
+              <span class="sign sign--hand" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect x="2" y="2" width="20" height="20" rx="4" stroke="currentColor" stroke-width="2.4"/>
+                  <text x="5" y="19" fill="currentColor" font-family="Georgia, 'Times New Roman', serif" font-size="8.5" font-weight="700">ctrl</text>
+                </svg>
+              </span>
+              <span class="sign sign--warn" aria-hidden="true">
+                <svg viewBox="0 0 16 14" fill="currentColor" shape-rendering="crispEdges"><path d="M7 0h2v1H7zM6 1h4v1H6zM5 2h2v2H5zM9 2h2v2H9zM4 4h2v2H4zM10 4h2v2h-2zM3 6h2v2H3zM11 6h2v2h-2zM2 8h2v2H2zM12 8h2v2h-2zM1 10h2v2H1zM13 10h2v2h-2zM0 12h16v2H0zM7 4h2v4H7zM7 9h2v2H7z"/></svg>
+              </span>
+              <span class="sign sign--prompt" aria-hidden="true">&gt;_</span>
+
+              <figure class="profile-card">
+                <div class="profile-card__bar" aria-hidden="true">
+                  <span>profile.png</span>
+                  <span>×</span>
+                </div>
+                <img
+                  class="profile-card__image"
+                  src="images/me.jpg"
+                  alt="Portrait"
+                  width="400"
+                  height="350"
+                />
+              </figure>
+            </div>
 
             <div class="hero__actions">
               <a class="btn btn--primary" href="#projects">View projects</a>
@@ -165,7 +183,7 @@
 
           <div class="about-grid">
             <article class="panel">
-              <h3 class="panel__tab">About me</h3>
+              <h3 class="panel__tab">$ whoami</h3>
               <div class="panel__body">
                 <p class="lead">
                   Hi! I'm SACI Zhour, an AI engineering student and UI/UX
