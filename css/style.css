@@ -1147,7 +1147,7 @@ a {
 }
 
 .typewriter {
-  --chars: 16; 
+  --chars: 15; 
   display: inline-block;
   box-sizing: content-box; 
   width: calc(var(--chars) * 1ch);
@@ -1160,17 +1160,16 @@ a {
   vertical-align: bottom;
   border-right: 0.125rem solid currentColor; /* the cursor */
   animation:
-    typing 1.4s steps(var(--chars), end) 0.4s both,
-    caret 0.7s step-end 0.4s 6 forwards;
+    typing 5s steps(var(--chars), end) infinite,
+    caret 0.7s step-end infinite;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: calc(var(--chars) * 1ch);
-  }
+  0%   { width: 0; }
+  35%  { width: calc(var(--chars) * 1ch); }  /* types */
+  80%  { width: calc(var(--chars) * 1ch); }  /* holds */
+  95%  { width: 0; }                         /* deletes */
+  100% { width: 0; }
 }
 
 @keyframes caret {
