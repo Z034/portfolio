@@ -36,15 +36,15 @@ The websites presents who i am, my education, my skills, my projects and how to 
 
 
 ## project Structure
-portfolio/  
-├── .gitignore  
-├── README.md  
-├── index.html  
-├── css/  
-│     └── style.css  
-├── js/  
-│     └── script.js  
-└── images/  
-      └── me.jpg  
-      └── amanah.png  
-      └── thiqa.png  
+portfolio/
+├── .gitignore
+├── README.md
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── images/
+    └── me.jpg
+    └── amanah.png
+    └── thiqa.png
